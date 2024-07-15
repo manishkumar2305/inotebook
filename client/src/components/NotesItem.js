@@ -28,7 +28,10 @@ export const NotesItem = (props) => {
       <div className={`card p-3 my-4 card-${num}`}>
         <div className={`card-body`}>
           <div className="d-flex justify-content-between">
-            <h5 className="card-title" style={{ fontSize: "25px" }}>
+            <h5
+              className="card-title text-white text-capitalize"
+              style={{ fontSize: "28px" }}
+            >
               {note.title}
             </h5>
             <div className="action">
@@ -44,7 +47,7 @@ export const NotesItem = (props) => {
               ></i>
             </div>
           </div>
-          <p className="card-text" style={{ fontSize: "18px" }}>
+          <p className="card-text text-white" style={{ fontSize: "18px" }}>
             {note.description}
           </p>
           <p
